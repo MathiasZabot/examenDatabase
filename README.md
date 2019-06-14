@@ -5,7 +5,7 @@
 3. SELECT product_code, product_nr FROM product WHERE locatie_nr IS NOT NULL
 4. SELECT product_code, product_nr FROM product WHERE product_nr BETWEEN 5 AND 15 OR product_nr BETWEEN 30 AND 55
 5. SELECT product_code, product_nr FROM product WHERE product_nr IN (5,10,20,25)
-6. SELECT persoon_naam, persoon_voornaam FROM persoon WHERE RIGHT(persoon_naam,1) LIKE 's' AND (persoon_voornaam LIKE 'f%' OR persoon_voornaam LIKE'p%')
+6. SELECT persoon_naam, persoon_voornaam FROM persoon WHERE RIGHT(persoon_naam,1) LIKE 's' AND (persoon_voornaam LIKE 'f%' OR persoon_voornaam LIKE 'p%')
 7. SELECT persoon_naam, persoon_voornaam, CASE persoon_geslacht WHEN 1 THEN 'man' WHEN 2 THEN 'vrouw' END persoon_geslacht, CASE persoon_taal WHEN 'N' THEN 'Nederlandstalig' WHEN 'F' THEN 'Franstalig' END persoon_taal FROM persoon
 8. SELECT COUNT(persoon_id) FROM persoon WHERE persoon_taal LIKE 'F'
 9. SELECT product_code, product_nr FROM product WHERE oorsprong_nr IS NULL
